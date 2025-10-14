@@ -1,14 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Main">
+    <Filter Include="System">
+      <UniqueIdentifier>{c8219eb3-2141-42fc-b351-ed2a527efc8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\ObjectPool">
+      <UniqueIdentifier>{bf6579e1-bb3a-4f04-a8b3-1c8aa69adf39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem">
+      <UniqueIdentifier>{f38af02e-fb4a-44d6-b87a-d61369ba8c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\CharacterBase">
+      <UniqueIdentifier>{aa7fb6c8-02f6-4ef4-a276-41d76dbd2fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Main">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="GameSystem\CharacterState">
+      <UniqueIdentifier>{1cb31c02-e355-48b9-aaae-fb8933e85d63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\CharacterFactory">
+      <UniqueIdentifier>{e7d0b311-2778-4833-83b1-17be2701b8b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\Enemy">
+      <UniqueIdentifier>{24781ba4-a697-487a-83fd-3ea2053ec947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\Player">
+      <UniqueIdentifier>{31d4b87e-8d2d-4190-a163-fdea10b0aa1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\BattleSystem">
+      <UniqueIdentifier>{192823ab-9ae6-4c91-81b8-1cb871eb67ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Main</Filter>
+    <ClCompile Include="Programs\Main.cpp">
+      <Filter>System\Main</Filter>
     </ClCompile>
+    <ClCompile Include="Programs\CharacterFactory.cpp">
+      <Filter>GameSystem\CharacterFactory</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Programs\CharacterBase.h">
+      <Filter>GameSystem\CharacterBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Programs\ObjectPool.h">
+      <Filter>System\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="Programs\CharacterState.h">
+      <Filter>GameSystem\CharacterState</Filter>
+    </ClInclude>
+    <ClInclude Include="Programs\CharacterFactory.h">
+      <Filter>GameSystem\CharacterFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Programs\Player.h">
+      <Filter>GameSystem\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Programs\Enemy.h">
+      <Filter>GameSystem\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Programs\BattleSystem.h">
+      <Filter>GameSystem\BattleSystem</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

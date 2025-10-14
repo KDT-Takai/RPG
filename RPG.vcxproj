@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Programs\CharacterFactory.cpp" />
+    <ClCompile Include="Programs\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Programs\BattleSystem.h" />
+    <ClInclude Include="Programs\CharacterBase.h" />
+    <ClInclude Include="Programs\CharacterFactory.h" />
+    <ClInclude Include="Programs\CharacterState.h" />
+    <ClInclude Include="Programs\Enemy.h" />
+    <ClInclude Include="Programs\ObjectPool.h" />
+    <ClInclude Include="Programs\Player.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,9 +139,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
