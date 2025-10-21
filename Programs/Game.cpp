@@ -64,17 +64,33 @@ void Game::Update() {
 
     PoolHandle<Player>* playerPtr = nullptr;
     switch (owner) {
-    case 0: playerPtr = &p1; break;
-    case 1: playerPtr = &p2; break;
-    case 2: playerPtr = &p3; break;
-    case 3: playerPtr = &p4; break;
+    case 0: playerPtr = &p1;
+        p1->IsAlive();
+        break;
+    case 1: playerPtr = &p2;
+        p2->IsAlive();
+        break;
+    case 2: playerPtr = &p3;
+        p3->IsAlive();
+        break;
+    case 3: playerPtr = &p4; 
+        p4->IsAlive();
+        break;
     }
     PoolHandle<Enemy>* enemyPtr = nullptr;
     switch (target) {
-    case 0: enemyPtr = &e1; break;
-    case 1: enemyPtr = &e2; break;
-    case 2: enemyPtr = &e3; break;
-    case 3: enemyPtr = &e4; break;
+    case 0: enemyPtr = &e1;
+        e1->IsAlive();
+        break;
+    case 1: enemyPtr = &e2;
+        e2->IsAlive();
+        break;
+    case 2: enemyPtr = &e3;
+        e3->IsAlive();
+        break;
+    case 3: enemyPtr = &e4;
+        e4->IsAlive();
+        break;
     }
 
     if (playerPtr && enemyPtr) {
@@ -84,6 +100,15 @@ void Game::Update() {
     else {
         std::cout << "Invalid selection!" << std::endl;
     }
+
+    p1->Data();
+    p2->Data();
+    p3->Data();
+    p4->Data();
+    e1->Data();
+    e2->Data();
+    e3->Data();
+    e4->Data();
 
 //    if (owner < players.size() && target < enemies.size()) {
 //        BattleSystem battle;

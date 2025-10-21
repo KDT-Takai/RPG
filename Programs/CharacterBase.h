@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "CharacterState.h"
+#include "Text.h"
 
 class CharacterBase
 {
@@ -37,8 +38,12 @@ public:
 		ChangeState.hp -= num;
 	}
 
-	void IsAlive(int id) {
-		
+	void IsAlive() {
+		if (ChangeState.hp <= 0) {
+			Text::Instance().Line();
+			std::cout << BaseState.name << " is Dead " << std::endl;
+			Text::Instance().Line();
+		}
 	}
 
 	// Getter
@@ -49,16 +54,28 @@ public:
 
 	// データ表示
 	void BaseData() {
+		Text::Instance().Line();
 		std::cout << "ID:" << BaseState.id << "\nName:" << BaseState.name << "\nLevel:" << level << "\nhp:" << BaseState.hp << "\nmp:" << BaseState.mp <<
 			"\nattack:" << BaseState.attack << "\ndefense:" << BaseState.defense << "\nspeed:" << BaseState.speed << "\nluck:" << BaseState.luck << std::endl;
+		Text::Instance().Line();
 	}
 	void LevelData() {
+		Text::Instance().Line();
 		std::cout << "LevelData\nLevel:" << level << "\nhp:" << LevelState.hp << "\nmp:" << LevelState.mp <<
 			"\nattack:" << LevelState.attack << "\ndefense:" << LevelState.defense << "\nspeed:" << LevelState.speed << "\nluck:" << LevelState.luck << std::endl;
+		Text::Instance().Line();
 	}
 	void ChangeData() {
+		Text::Instance().Line();
 		std::cout << "ChangeData\nLevel:" << level << "\nhp:" << ChangeState.hp << "\nmp:" << ChangeState.mp <<
 			"\nattack:" << ChangeState.attack << "\ndefense:" << ChangeState.defense << "\nspeed:" << ChangeState.speed << "\nluck:" << ChangeState.luck << std::endl;
+		Text::Instance().Line();
+	}
+	void Data() {
+		Text::Instance().Line();
+		IsAlive();
+		std::cout << "ID : " << BaseState.id << "\nName : " << BaseState.name << "\nhp / Maxhp : " << ChangeState.hp << " / " << LevelState.hp << std::endl;
+		Text::Instance().Line();
 	}
 
 private:
