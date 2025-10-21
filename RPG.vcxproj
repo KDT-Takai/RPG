@@ -21,6 +21,8 @@
   <ItemGroup>
     <ClCompile Include="Programs\CharacterFactory.cpp" />
     <ClCompile Include="Programs\Main.cpp" />
+    <ClCompile Include="Programs\ScreenManager.cpp" />
+    <ClCompile Include="Programs\Game.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Programs\BattleSystem.h" />
@@ -30,6 +32,11 @@
     <ClInclude Include="Programs\Enemy.h" />
     <ClInclude Include="Programs\ObjectPool.h" />
     <ClInclude Include="Programs\Player.h" />
+    <ClInclude Include="Programs\ScreenBase.h" />
+    <ClInclude Include="Programs\ScreenManager.h" />
+    <ClInclude Include="Programs\Game.h" />
+    <ClInclude Include="Programs\Singleton.h" />
+    <ClInclude Include="Programs\Text.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

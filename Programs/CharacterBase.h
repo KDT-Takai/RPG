@@ -6,28 +6,39 @@ class CharacterBase
 {
 protected:
 
-	int level;						// レベル
-	CharacterBaseState BaseState;	// キャラクターの基礎値
-	CharacterLevelState LevelState; // キャラクターのレベル値
-	CharacterChangeState ChangeState; // キャラクターの変化値
+	int level;							// レベル
+	CharacterBaseState BaseState;		// キャラクターの基礎値
+	CharacterLevelState LevelState;		// キャラクターのレベル値
+	CharacterChangeState ChangeState;	// キャラクターの変化値
 
 public:
 	/// <summary>
 	/// コンストラクタ
 	/// </summary>
 	/// <param name="argBaseState">キャラクターの基礎値</param>
-	CharacterBase(CharacterBaseState argBaseState, int level) {
-		this->BaseState = argBaseState;
+	//CharacterBase(CharacterBaseState argBaseState, int level) {
+	//	this->BaseState = argBaseState;
+	//	this->level = level;
+	//	Level();
+	//	Change();
+	//};
+
+	~CharacterBase() = default;
+	
+	void Initialize(const CharacterBaseState& state, int level) {
+		this->BaseState = state;
 		this->level = level;
 		Level();
 		Change();
-	};
-
-	~CharacterBase();
+	}
 
 	void Damage(int num) {
-		std::cout << "Character Damaged!" << std::endl;
+		std::cout << BaseState.name << " Damaged!" << std::endl;
 		ChangeState.hp -= num;
+	}
+
+	void IsAlive(int id) {
+		
 	}
 
 	// Getter

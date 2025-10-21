@@ -7,8 +7,7 @@ private:
 
 public:
 	
-	Player(CharacterBaseState argBaseState, int level) : CharacterBase(argBaseState,level) {
-	};
-
-	~Player();
+	// Player(CharacterBaseState argBaseState, int level) : CharacterBase(argBaseState,level) {
+	// };1
+	 ~Player() = default;
 };

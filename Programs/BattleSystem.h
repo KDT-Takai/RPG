@@ -7,7 +7,7 @@ public:
 	// UŒ‚ˆ—
 	void Attack(CharacterBase& argOwner, CharacterBase& argEnemy) {
 		CharacterChangeState owner = argOwner.GetChangeState();
-		CharacterChangeState enemy = argOwner.GetChangeState();
+		CharacterChangeState enemy = argEnemy.GetChangeState();
 
 		int damage = owner.attack - enemy.defense;
 		if (damage < 0) damage = 1;

@@ -54,7 +54,6 @@ public:
 		if (free_.empty()) throw std::runtime_error("empty");	// 空の場合
 		T* obj = free_.top();
 		free_.pop();
-		// ここでキャラクターの生成をしたい
 		return PoolHandle<T>(obj, this);
 	}
 private:

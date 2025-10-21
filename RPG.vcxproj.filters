@@ -7,30 +7,45 @@
     <Filter Include="System\ObjectPool">
       <UniqueIdentifier>{bf6579e1-bb3a-4f04-a8b3-1c8aa69adf39}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameSystem">
-      <UniqueIdentifier>{f38af02e-fb4a-44d6-b87a-d61369ba8c68}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GameSystem\CharacterBase">
-      <UniqueIdentifier>{aa7fb6c8-02f6-4ef4-a276-41d76dbd2fe0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="System\Main">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="GameSystem\CharacterState">
+    <Filter Include="System\Scene">
+      <UniqueIdentifier>{8efd8620-5002-4aec-b92e-9952d4a8aa46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{6b0679ab-7ed1-4093-b45f-12ca815515a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameSystem">
+      <UniqueIdentifier>{f38af02e-fb4a-44d6-b87a-d61369ba8c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameSystem\CharacterBase">
+      <UniqueIdentifier>{aa7fb6c8-02f6-4ef4-a276-41d76dbd2fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameSystem\CharacterState">
       <UniqueIdentifier>{1cb31c02-e355-48b9-aaae-fb8933e85d63}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameSystem\CharacterFactory">
+    <Filter Include="Game\GameSystem\CharacterFactory">
       <UniqueIdentifier>{e7d0b311-2778-4833-83b1-17be2701b8b0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameSystem\Enemy">
+    <Filter Include="Game\GameSystem\Enemy">
       <UniqueIdentifier>{24781ba4-a697-487a-83fd-3ea2053ec947}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameSystem\Player">
+    <Filter Include="Game\GameSystem\Player">
       <UniqueIdentifier>{31d4b87e-8d2d-4190-a163-fdea10b0aa1f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameSystem\BattleSystem">
+    <Filter Include="Game\GameSystem\BattleSystem">
       <UniqueIdentifier>{192823ab-9ae6-4c91-81b8-1cb871eb67ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\!Game">
+      <UniqueIdentifier>{3394b77d-0498-4eb8-a0f7-a1dfed2b4566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Singleton">
+      <UniqueIdentifier>{1ef204aa-7093-491e-807d-09f907ccae89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Text">
+      <UniqueIdentifier>{cfd2827a-f6f0-4f4b-a4b3-ce8242c52dd7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -38,30 +53,51 @@
       <Filter>System\Main</Filter>
     </ClCompile>
     <ClCompile Include="Programs\CharacterFactory.cpp">
-      <Filter>GameSystem\CharacterFactory</Filter>
+      <Filter>Game\GameSystem\CharacterFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Programs\ScreenManager.cpp">
+      <Filter>System\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Programs\Game.cpp">
+      <Filter>Game\!Game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Programs\CharacterBase.h">
-      <Filter>GameSystem\CharacterBase</Filter>
+      <Filter>Game\GameSystem\CharacterBase</Filter>
     </ClInclude>
     <ClInclude Include="Programs\ObjectPool.h">
       <Filter>System\ObjectPool</Filter>
     </ClInclude>
     <ClInclude Include="Programs\CharacterState.h">
-      <Filter>GameSystem\CharacterState</Filter>
+      <Filter>Game\GameSystem\CharacterState</Filter>
     </ClInclude>
     <ClInclude Include="Programs\CharacterFactory.h">
-      <Filter>GameSystem\CharacterFactory</Filter>
+      <Filter>Game\GameSystem\CharacterFactory</Filter>
     </ClInclude>
     <ClInclude Include="Programs\Player.h">
-      <Filter>GameSystem\Player</Filter>
+      <Filter>Game\GameSystem\Player</Filter>
     </ClInclude>
     <ClInclude Include="Programs\Enemy.h">
-      <Filter>GameSystem\Enemy</Filter>
+      <Filter>Game\GameSystem\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="Programs\BattleSystem.h">
-      <Filter>GameSystem\BattleSystem</Filter>
+      <Filter>Game\GameSystem\BattleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Programs\ScreenBase.h">
+      <Filter>System\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Programs\ScreenManager.h">
+      <Filter>System\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Programs\Game.h">
+      <Filter>Game\!Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Programs\Singleton.h">
+      <Filter>System\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Programs\Text.h">
+      <Filter>System\Text</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

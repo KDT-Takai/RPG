@@ -13,7 +13,7 @@ struct CharacterBaseState {
 	int speed;			// 速度
 	int luck;			// 運
 };
-
+// レベル加算した時のステータス
 struct CharacterLevelState {
 	int hp;				// HP
 	int mp;				// MP
@@ -22,7 +22,7 @@ struct CharacterLevelState {
 	int speed;			// 速度
 	int luck;			// 運
 };
-
+// ゲーム内でbuffなどで変動する値
 struct CharacterChangeState {
 	int hp;				// HP
 	int mp;				// MP
